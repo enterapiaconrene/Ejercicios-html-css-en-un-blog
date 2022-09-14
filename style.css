@@ -1,0 +1,281 @@
+#titulo {
+    color:slateblue;
+    position: sticky;
+} /* se usa el # para los identificadores ID */
+
+.alt1 {
+    color: maroon;
+} /* se usa el selector . para las clases */
+
+p.texto {
+    color:brown;
+} /* se usa la etiqueta con su clase cuando se quiere seleccionar solo algunas etiquetas que contengan esa clase */
+
+p.especial {
+    color:mediumseagreen;
+} /* Se expresará con mayor relevancia el último estilo en el código */
+
+div p {
+    font-size: 14px;
+} /* todos los parrafos de un div se ven afectados */
+
+div h2, div h3 {
+    color:#666;
+    font-size: 24px;
+} /* utilicé dos títulos diferentes y luego les di el mismo estilo */
+
+/* 
+* {
+    color: violet;
+}  Usando el * se aplica el estilo a todo el contenido si no hay otro estilo aplicado
+*/
+
+.color {
+    /* selector de colores usando ctrl+espacio Ej. color:lime; */
+    /* Valores exagecimales       color:#666 o @ffffff 
+    en donde el:
+    1er digito representa el rojo
+    2do digito representa el verde
+    3er digito representa el azul
+    Cuando se usan 6 digitos el primer digito es la base del color y el segundo es el decimal en cada caso.
+    */
+    /* RGB                         color: rgb (0, 0, 0)
+    en donde el:
+    1er digito representa el rojo
+    2do digito representa el verde
+    3er digito representa el azul
+    usando números del 0 al 255
+    */
+    /* RGBA                         color: rgba (0, 0, 0, 0)
+    en donde el:
+    4to digito es el nivel de transparencia.
+    usando números del 0 al 1, siendo 0 completamente transparente y 1 completamente solido.
+    */
+    /*border: 5px cadetblue ;
+    estilo de bordes
+        dashed
+        doted
+        solid * más comin
+        double
+        groove - tienen atributos en 3d
+        ridge  -  
+        inset  -
+        outset -
+        none
+        hidden
+        currentColor
+    */
+    border-style: solid;
+    border-color: aquamarine;
+    border-radius: .5rem;
+    border-width: 1rem;
+    /* Unidades de medida
+        px
+        cm
+        mm
+        vmin
+        in
+        ch
+        em -2 veces el tamaño de la fuente
+        ex
+        pc -12 puntos (1 pica)
+        pt -1 punto
+        vh
+        vmax
+        rem -relativo a la fuente del elemento raiz
+     */
+}
+#fondo {
+    /*background-color: red;
+    opacity: .3; */
+    background-image: url('img/ESPECIALIZATE\ EN\ DISEÑO\ WEB\ CON\ CSS.jpeg');
+    height: 800px;
+    background-size: contain;
+    /* Tamaños relativos de fondos 
+        cover -cubre el tamaño de la ventada agrandandose
+        contain -contiene la imagen en el tamaño indicado
+        auto -combina las dos anteriores
+        whight height -especifica el alto y el ancho específico
+    */
+    background-repeat: no-repeat;
+    /* formas de repetir
+        repeat
+        no-repeat
+        repeat-x
+        repeat-y
+    */
+    background-position: center;
+    /* tipos de posición 
+        top
+        bottom
+        center
+        left
+        righ
+        inherit
+        initial
+        unset
+        */
+}
+
+#fondo2 {
+    height: 50rem;
+    background: rgba(92, 30, 209, .25) url('img/LOS\ TRES\ PILARES\ DE\ CSS.jpeg') repeat-y center top /50rem 50rem;
+    /* background-size: 600px 600px; en lugar de usar el / con las medidas se usa así */
+}
+
+.margen {
+    background-color: chocolate;
+    /* tipos de margenes
+    margin 
+    margin-top
+    margin-bottom
+    margin-left
+    margin-right */
+    margin: 15px /*20px 25px 30px*/; /* genera espacio afuera del elemento */
+    /* Atributos de margen
+    con 4 valores el orden es: arriba derecha abajo izquierda  
+    con 3 valores el orden es: arriba horizontal abajo*
+    con 2 valores el orden es vertical horizontal
+    con 1 valor: todos los lados son iguales/
+    padding: 30px 25px 20px 15px; /* genera espacios dentro del elemento */
+    border: solid 5px black;
+    height: 400px;
+    width: 400px;
+    overflow: auto;
+    /* tipos de overflow
+        auto
+        scroll
+        hidden
+        visible
+    */
+    outline: solid aqua 5px; /* borde exterior con las mismas características del borde, pero fuera del objeto */
+} 
+.text {
+    font-family: 'Montserrat', sans-serif;
+    /* 
+    cambia la familia de fuentes
+    */
+    text-align: justify;
+    /* 
+        left
+        right
+        center
+        justify
+    */
+    text-decoration: overline
+    /* 
+        line-through
+        overline
+         */;
+    text-shadow: 3px 5px 5px blue; /* 
+    primer valor es el desplazamiento del texto hacia la derecha y el 
+    segundo es el deplazamiento hacia abajo
+    tercer valor es el difuminado
+    el cuarto es el color*/
+}
+a:link {
+    color:blueviolet
+}
+a:visited {
+    color:gray
+}
+a:hover {
+    color:yellow
+}
+a:active {
+    color:red
+} /* Tienen que ir en este orden para que esto funcione */
+ul {
+    background-color: aquamarine;
+    list-style-position: none;
+    padding-left: 0;
+    list-style-position: inside;
+    list-style-type: square;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+td, th {
+    border: #666 solid 1px;
+    padding: 10px;
+}
+th {
+    background-color: red;
+    color: white;
+    text-align: left;
+}
+tr:nth-child(odd) {
+    background-color: #eee;
+} /* 
+odd -impar
+even -par 
+*/ 
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+.inline {
+    display: inline; /*las etiquetas que vienen por default inline son 'span' 'a' 'img' */
+}
+.bloque {
+    display: block;
+    /* display: none; */  /* hace invisible el elemento */
+    visibility: visible; /* hace invisible el elemento */
+    max-width: 300px; /* ancho maximo */
+    background-color: red;
+}
+.position {
+    position: static; /* 
+        static -posición estatiaco por defecto de todos los elementos de html
+        relative -relativa a donde debe estar posicionado este elemento de acuerdo a las propiedades
+        absolut -se va a relacionar con el elemento padre más cercano
+        fixed -le indica que debe tener una posición de acuerdo a lo que se ve en el navegador
+        sticky
+        */
+    left: 300px;
+    bottom: 0;
+}
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+    display: inline;
+}
+.right {
+    float: right;
+    width: 100px;
+    display: inline;
+}
+.container {
+    height: 400px;
+}
+.card {
+    border:solid 1px #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 15px;
+    height: 150px;
+}
+.column {
+    border:solid 0px #ddd;
+    padding: 10px 0px;
+    width: 33.3%;
+}
+.inline-block { /* 
+    A diferencia de inline en inline-block se le puede pasar la propiedad de wight o hight.
+    Se utiliza para hacer menus de navegación, los cuales tengan los links de izq a der, o de der a izq 
+    ya que de esta manera pueden tener un ancho fijo, para que se vean uniformes.
+     */
+    display: inline-block;
+    height: 55px;
+    width: 300px;
+    background-color: red;
+}
+.center {
+    text-align: center; /* centrado de texto */
+    width: 200px;
+    margin: 0 auto; /* centrado horizontal */
+    padding: 50px 0; /* centrado vertical */
+    background-color: aqua;
+}

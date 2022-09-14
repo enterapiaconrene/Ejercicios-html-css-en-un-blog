@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-16">
+        <title>Guía de html</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Titulos, parrafos, lineas, comentarios, saltos de linea y span </h1>
+        </header>
+        <section> <!-- también se puede usar 'main' para delimitar el espacio principal de la pagina -->
+            <h2>subtitulo 2</h2>
+            <h3>sustitulo 3</h3>
+            <h4>subtitulo 4</h4>
+            <h5>subtitulo 5</h5>
+            <h6>sustitulo 6</h6>
+            <p>parrafo 1</p>
+            <p>parrafo 2 <span style="color:blue">mucho más largo</span> para explicar la etiqueta de span. <br> 
+                Así cambiamos el color sólo de una parte del texto.</p>
+            
+        <!-- La etiqueta <hr> sirve para hacer una linea divisoria -->
+            <hr>
+            <h3>Hipervínculos</h3>
+            <a tarjet="_blank" href="https://www.google.com">Ir a Google</a>     
+            <hr>  
+            <h3>Imagenes</h3>
+            <img src="img/ESPECIALIZATE EN DISEÑO WEB CON CSS.jpeg" width="200"/>
+            <hr>
+        
+            <h3>Formularios y Botones</h3>
+            <div>
+                <form action="/formulario" method="POST">
+                    <label for="Nombre">Nombre
+                        <input type="text" id="Nombre" name="Nombre" placeholder="Ej. Panchito" value="escribe el valor por defecto"/></label><br>
+                    <label for="Apellido">Apellido
+                        <input type="text" id="Apellido" name="Apellido" placeholder="Ej. López"/></label><br>
+                    <label for="Correo">Correo
+                        <input type="email" id="Correo" name="Correo" placeholder="Ej. usuario@mail.com"/></label><br>
+                    <label for="Comentario">Comentario<br>
+                        <textarea cols="40" rows="10" id="Comentario" name="Comentario" placeholder="Escribe aquí tu comentario">En los comentarios el valor por defecto se coloca aquí</textarea></label><br>
+                    <br>
+                    <!-- Casilla de verificación -->
+                        <input type="checkbox" name="autorización"  value="true" required checked>Autorizo que mi información personal se venda a piratas informaticos:</input> <!-- required obliga a contestar este campo -->
+                        <br><label for="norcorea"><input id="norcorea" type="radio" name="autorización"  value="true" checked>Norcoreanos</input></label>
+                        <br><label for="norcorea"><input type="radio" name="autorización"  value="true">Rusos</input></label>
+                        <br><label for="norcorea"><input type="radio" name="autorización"  value="true">Tailandeces</input></label>
+                        <br><label for="norcorea"><input type="radio" name="autorización"  value="true">Chinos</input></label><br><br>
+                    <input type="submit"/><input type="reset"/><br><br>
+                    <button type="reset">Me arrepentí 🥴</button><button type="submit">Vamos por unas chelas 🍻</button> <!-- Los botones son más editables que los imputs-->
+                </form>
+            </div>
+            <hr>
+            <h3>Listas</h3>
+            <p>La etiqueta < ul > se usa para listas no ordenadas.</p> 
+            <p>La etiqueta < ol > se usa para listas ordenadas.</p> 
+            <p>La etiqueta < li > se usa para cada elemento de una lista ordenada o no ordenada.</p>
+            <p>Ejemplos:</p>
+
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+            <ol>
+                <li value="10">Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                    <ol>
+                        <li style="list-style-type: lower-alpha;">Subelemento 1</li>
+                    </ol>
+            </ol>
+            <hr>
+        <h3>Como usar las tablas </h3>
+         <p>La etiqueta de < tr >  o table row, se usa para especificar las filas de nuestra tabla.<br>
+         La etiqueta de < th > o table head, se usa para especificar la cabecera.<br>
+         La etiqueta de < td > o table data, define elementos estandares de nuestra tabla.<br>
+         La etiqueta < thead > define el espacio de cabecera.<br>
+         La etiqueta < tbody > define el cuerpo de la tabla.<br>
+         La etiqueta < tfoot > define el pie de la tabla</p>
+         
+        <br>
+        <br>
+         <table style="width: 400px;">
+            <thead><tr>
+                <th>Precio</th> 
+                <th>Producto</th>
+            </tr></thead>
+            <tbody><tr>
+                <td>$1100</td>
+                <td>Curso html</td>
+            </tr>
+            <tr>
+                <td>$1200</td>
+                <td>Curso CSS</td>
+            </tr>
+            <tr>
+                <td>$1500</td>
+                <td>Curso JavaScript</td>
+            </tr></tbody>
+            <tfoot>
+                <td><span style="color: #666;"><strong>$3800</strong></span></td><td><span style="color: #666;"><strong>Total</strong></span></td>
+            </tfoot>
+        </table>
+        <br>
+        <br>
+        <hr>
+        </section> 
+        <footer>
+            <h3>Header, sección y footer</h3>
+            <strong>Copyrigth 2022</strong><br>
+            <a href="mailto:cursocss@siempreaprende.com">Contacto</a>
+        </footer>
+    </body>
+</html>

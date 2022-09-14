@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-16">
+    <title>Guía de CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        .alt2 {
+            color: teal;
+        }
+    </style>
+</head>    
+<body>
+    <h1 id="titulo">Esta es una prueba de estilos de CSS</h1>
+    <div>
+        <h3>Alternativa 1</h3>
+            <p class="alt1">Esta es la opción más recomendada, ya que se enlaza a un archivo externo.</p>
+        <h2>Alternativa 2</h3>
+            <p class="alt2">Esta es una opción poco recomendada, en donde se incluye el código en la cabecera. </p>
+        <h3>Alternativa 3</h3>
+            <p style="color:tomato;">Esta es la prueba menos recomendada, ya que se incluye el código de estilo dentro de las etiquetas de html</p>
+    </div>
+    <hr>
+    <div>  
+        <p>Este parrafo no tiene clase</p>
+        <p class="texto">Este parrafo tiene la clase texto</p>
+        <p>Este parrafo tampoco tiene clase</p>
+        <p class="texto especial">Este parrafo tiene la clase texto especial, por lo que se ve el color especial y no el de texto por el órden en el que se encuentra el código CSS</p>
+    </div>
+    <hr>
+    <h1 class="color">Esta es una prueba de color</h1>
+    <hr>
+    <article id="fondo">
+        Soy la propiedad de background
+    </article>
+    <article id="fondo2">
+        Soy la propiedad de background resumida
+    </article>
+    <div class="margen">
+        <h1>Soy una propiedad de margen</h1>
+        <p class="text">Esto es un texto largo para poder jugar con sus propiedades.</p>
+    </div>
+    <a tarjet="_blank" href="https://www.google.com">Ir a Google</a>  
+    <hr>
+    <ul>
+        <li>Elemento 1</li>
+    </ul>   
+    <hr>
+    <table>
+        <thead><tr>
+            <th>Precio</th> 
+            <th>Producto</th>
+        </tr></thead>
+        <tbody><tr>
+            <td>$1100</td>
+            <td>Curso html</td>
+        </tr>
+        <tr>
+            <td>$1200</td>
+            <td>Curso CSS</td>
+        </tr>
+        <tr>
+            <td>$1500</td>
+            <td>Curso JavaScript</td>
+        </tr></tbody>
+    </table>
+    <hr>
+    <div>texto en un div con atributos por defecto</div>
+    <div class="inline">texto en un div con atributos inline</div>
+    <span class="bloque">span  con atributos en bloque</span>
+    <span>span  con antributos por defecto</span>
+    <hr>
+    <article class="position">Este es un espacio de prueba de posición</article>
+    <hr>
+    <div class="container">
+        <div class="left">
+            izquerda izquerda izquerda izquerda izquerda izquerda izquerda izquerda izquerda izquerda izquerda izquerda izquerda izquerda izquerda 
+        </div>
+        <div>texto sin flotación texto sin flotación texto sin flotación texto sin flotación texto sin flotación </div>
+        <div class="right">
+            derecha derecha derecha derecha derecha derecha derecha derecha derecha derecha derecha derecha derecha derecha derecha derecha derecha
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <img src="img/LOS TRES PILARES DE CSS.jpeg" class="left" alt="Los tres pilares de CSS"/>
+        <p>Soy un parrafo a la derecha, con mucho texto para ver el comportamiento de flotación junto a una imagen.</p>
+    </div>
+    
+    <hr>
+    <div class="container">
+        <article class="card right">card 1</article>
+        <article class="card right">card 2</article>
+        <article class="card right">card 3</article>
+    </div>
+    <hr>
+    <div class="container">
+        <article class="column right">Columna 1</article>
+        <article class="column right">Columna 2</article>
+        <article class="column right">Columna 3</article>
+    </div>
+    <hr>
+    <div>texto en un div con atributos por defecto</div>
+    <div class="inline-block">texto en un div con atributos inline-block</div>
+    <hr>
+    <section class="center">
+        <p>Este es un parrafo centrado</p>
+    </section>
+</body>
+</html>

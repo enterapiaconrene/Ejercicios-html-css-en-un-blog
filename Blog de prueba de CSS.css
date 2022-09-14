@@ -1,0 +1,89 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+}
+header {
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    padding: 0rem 0rem;
+    height: 50px;
+    box-shadow: 2.5px 2.5px 2.5px #aaa;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+h1 {
+    text-align: center;
+    padding: 0 15px;
+    top: 0;
+    
+}
+.menu {
+    background-color: rgba(0, 0, 0, 0);
+    width: 1rem;
+    display: inline;
+    padding: 0 10px;
+    float: right;
+}
+section {
+    padding: 0 0%;
+    width: 400px;
+    margin: 0 auto;
+}
+section article {
+    transition: box-shadow 0.3s ease; /* ease, ease-in, ease-out ease-in-out, linear, etc.*/
+    background-color: white;
+    margin: 1rem 0;
+    box-shadow: 2.5px 2.5px 2.5px #aaa;
+    border-radius: 3px;
+    padding: 0.25rem 0rem;
+    width: 25rem;
+}
+section article h2, section article p {
+    margin: 1rem;
+}
+section article:hover {
+    box-shadow: 5px 5px 5px #aaa;
+}
+div {
+    width: 400px;
+    padding: 25px 0px;
+}
+a:link {
+    color:bisque
+}
+a:visited {
+    color:bisque
+}
+a:hover {
+    color:burlywood
+}
+a:active {
+    color:burlywood
+} 
+footer {
+    background-color: cornflowerblue;
+    color: bisque;
+    height: 35px;
+    box-shadow: 5px 5px 5px #aaa;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: x-small;
+}
+footer a {
+    transition: text-shadow 0.3s ease;
+    text-decoration: none;
+}
+.letras_chiquitas {
+    font-size: x-small;
+    text-align: center;
+    padding-left: 5px;
+}
